@@ -61,7 +61,7 @@ const TeamDetails = () => {
                         </div>
                     </Col>
                     <Col sm={5}>
-                        <img src={teamImg} alt='team image' width="100%" />
+                        <img src={teamImg} alt='teamsImg' width="100%" />
                     </Col>
                 </Row>
             </Container>

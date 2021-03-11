@@ -13,7 +13,7 @@ const Header = (props) => {
     }
     return (
         <div>
-            <img src={banner} style={headerStyle} alt='Banner image' fluid />
+            <img src={banner} style={headerStyle} alt='BannerImg' fluid />
         </div>
     );
 };
