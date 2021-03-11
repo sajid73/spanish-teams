@@ -8,7 +8,6 @@ import { useEffect, useState } from 'react';
 import Home from './components/Home/Home';
 import TeamDetails from './components/TeamDetails/TeamDetails';
 import NoMatch from './components/NoMatch/NoMatch';
-import Header from './components/Header/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -18,11 +17,6 @@ function App() {
       .then(res => res.json())
       .then(data => { setTeams(data.teams) })
   }, [])
-  // useEffect(()=>{
-  //   fetch('https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=133604')
-  //   .then(res=> res.json())
-  //   .then(data => console.log(data))
-  // },[])
 
   return (
     <Router>

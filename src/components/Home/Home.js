@@ -10,6 +10,7 @@ const Home = (props) => {
   const { teams } = props
   return (
     <div style={{ backgroundColor: 'greenyellow' }}>
+      <h3 className='dynamic'>TP World Cup Teams</h3>
       <Header banner={stadium} />
       <CardDeck className="CardDeckStyle">
         {

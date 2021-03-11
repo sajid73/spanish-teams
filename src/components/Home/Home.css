@@ -5,3 +5,11 @@
         align-items: center;
     }
 }
+.dynamic{
+    position: absolute;
+    font-size: 3rem;
+    font-weight: 900;
+    top: 15vh;
+    left: 35vw;
+    color: rgb(255, 0, 0);
+}

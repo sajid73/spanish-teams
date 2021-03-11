@@ -18,7 +18,8 @@ const TeamList = (props) => {
         float: 'left',
         margin: '5%',
         marginRight: '2%',
-        padding: '1%'
+        padding: '1%',
+        alignItems: 'center'
     }
     return (
         <div>
