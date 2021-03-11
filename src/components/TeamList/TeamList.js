@@ -29,7 +29,7 @@ const TeamList = (props) => {
                     <Card.Title>{strTeam}</Card.Title>
                     <Card.Text>Sports Type: {strSport}</Card.Text>
                     <Button onClick={() => teamDetails(idTeam)} variant="contained" color="primary">
-                        Explore  <FontAwesomeIcon icon={faArrowAltCircleRight} />
+                        Explore &nbsp; <FontAwesomeIcon icon={faArrowAltCircleRight} />
                     </Button>
                 </Card.Body>
             </Card>

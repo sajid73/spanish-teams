@@ -22,13 +22,13 @@ function App() {
     <Router>
       <Switch>
         <Route path="/home">
-          <Home teams={teams}></Home>
+          <Home teams={teams} />
         </Route>
         <Route path="/team/:idTeam">
           <TeamDetails></TeamDetails>
         </Route>
         <Route exact path="/">
-          <Home teams={teams}></Home>
+        <Home teams={teams} />
         </Route>
         <Route path="*">
           <NoMatch />
