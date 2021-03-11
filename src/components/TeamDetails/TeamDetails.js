@@ -25,10 +25,8 @@ const TeamDetails = () => {
     strFacebook = 'https://' + strFacebook;
     strYoutube = 'https://' + strYoutube;
 
-    console.log(team);
     let teamImg
-    console.log(team);
-    if (strGender == 'Male') {
+    if (strGender === 'Male') {
         teamImg = male
     }
     else {
@@ -49,7 +47,7 @@ const TeamDetails = () => {
 
             <Header banner={strStadiumThumb} />
 
-            <img src={strTeamBadge} width='200px' className='dynamic' />
+            <img src={strTeamBadge} width='200px' alt='team badge' className='dynamic' />
 
             <Container style={containerStyle} >
                 <Row>
@@ -63,7 +61,7 @@ const TeamDetails = () => {
                         </div>
                     </Col>
                     <Col sm={5}>
-                        <img src={teamImg} width="100%" />
+                        <img src={teamImg} alt='team image' width="100%" />
                     </Col>
                 </Row>
             </Container>
@@ -74,9 +72,9 @@ const TeamDetails = () => {
             </Container>
 
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                <a target="_blank" href={strTwitter}><img style={socialIcon} src={twitter}></img></a>
-                <a target="_blank" href={strFacebook}><img style={socialIcon} src={facebook}></img></a>
-                <a target="_blank" href={strYoutube}><img style={socialIcon} src={youtube}></img></a>
+                <a target="_blank" rel="noreferrer" href={strTwitter}><img style={socialIcon} alt='social media icon' src={twitter}></img></a>
+                <a target="_blank" rel="noreferrer" href={strFacebook}><img style={socialIcon} alt='social media icon' src={facebook}></img></a>
+                <a target="_blank" rel="noreferrer" href={strYoutube}><img style={socialIcon} alt='social media icon' src={youtube}></img></a>
             </div>
         </div>
     );
