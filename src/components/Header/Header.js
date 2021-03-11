@@ -1,10 +1,19 @@
 import React from 'react';
-import { Image } from 'react-bootstrap';
 import '../../App.css'
+import stadium from '../../images/stad.jpg'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Header = () => {
+const Header = (props) => {
+    let { banner } = props;
+    if (banner === null) {
+        banner = stadium
+    }
+    const headerStyle = {
+        width: '100%', height: '50vh', margin: 'auto'
+    }
     return (
-        <div style={{backgroundImage: '../../images/stadium.jpg', width: '100%', height: '345px'}}>
+        <div>
+            <img src={banner} style={headerStyle} fluid />
         </div>
     );
 };
